@@ -1,5 +1,8 @@
 # 🏢 Cyber-Physical System (CPS) - Dashboard d'Analyse du Bâtiment
 
+![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
+![Streamlit](https://img.shields.io/badge/Streamlit-App-red)
+
 Ce projet est une application web interactive développée avec **Streamlit**. Elle fait office de **Système Cyber-Physique (CPS)** dédié à la supervision, la validation de données multi-capteurs, et l'optimisation énergétique (confort et gaspillage) d'un bâtiment intelligent.
 
 L'application intègre une approche hybride combinant des règles physiques (**Théorie de Dempster-Shafer**) et des modèles statistiques (**Isolation Forest**) pour monitorer les étages sur plusieurs années.
@@ -8,16 +11,16 @@ L'application intègre une approche hybride combinant des règles physiques (**T
 
 ## 📑 Sommaire
 
-- [Fonctionnalités Principales](#-fonctionnalités-principales)
-- [Structure du Projet](#-structure-du-projet)
-- [Installation et Lancement Local](#-installation-et-lancement-local)
-- [Déploiement](#-déploiement)
-- [Technologies Utilisées](#-technologies-utilisées)
-- [Contribuer](#-contribuer)
-- [Licence](#-licence)
+- [Fonctionnalités Principales](#fonctionnalites-principales)
+- [Structure du Projet](#structure-du-projet)
+- [Installation et Lancement Local](#installation-et-lancement-local)
+- [Déploiement](#deploiement)
+- [Technologies Utilisées](#technologies-utilisees)
+- [Modules du Projet](#modules-du-projet)
 
 ---
 
+<a id="fonctionnalites-principales"></a>
 ## 📊 Fonctionnalités Principales
 
 * **Nettoyage Automatisé** : Détection et élimination à la volée des lignes corrompues ou des données parasites dans les fichiers sources.
@@ -29,10 +32,11 @@ L'application intègre une approche hybride combinant des règles physiques (**T
 
 ---
 
+<a id="structure-du-projet"></a>
 ## 📁 Structure du Projet
 
 ```text
-📁 visualizer_CPS_Smart_Building/
+📁 ton-projet-cps/
 ├── 📁 data/                  # Fichiers de données temporelles
 │   ├── 📁 raw/               # Fichiers CSV d'origine (ex: 2019Floor6.csv)
 │   └── 📄 cleaned_...csv     # Fichiers nettoyés après traitement
@@ -46,6 +50,7 @@ L'application intègre une approche hybride combinant des règles physiques (**T
 
 ---
 
+<a id="installation-et-lancement-local"></a>
 ## 🚀 Installation et Lancement Local
 
 ### 1. Prérequis
@@ -71,13 +76,14 @@ pip install -r requirements.txt
 Pour lancer le serveur local Streamlit, exécutez :
 
 ```bash
-python -m streamlit run app.py
+streamlit run app.py
 ```
 
 L'application s'ouvrira automatiquement dans votre navigateur par défaut à l'adresse [http://localhost:8501](http://localhost:8501).
 
 ---
 
+<a id="deploiement"></a>
 ## 🌐 Déploiement
 
 Ce projet est configuré pour être déployé en un clic sur **Streamlit Community Cloud** :
@@ -88,6 +94,7 @@ Ce projet est configuré pour être déployé en un clic sur **Streamlit Communi
 
 ---
 
+<a id="technologies-utilisees"></a>
 ## 🛠️ Technologies Utilisées
 
 | Catégorie | Technologie |
@@ -100,6 +107,7 @@ Ce projet est configuré pour être déployé en un clic sur **Streamlit Communi
 
 ---
 
+<a id="modules-du-projet"></a>
 ## 🧩 Modules du Projet
 
 | Fichier | Rôle |
