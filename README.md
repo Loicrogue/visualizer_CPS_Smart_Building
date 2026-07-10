@@ -76,7 +76,7 @@ pip install -r requirements.txt
 Pour lancer le serveur local Streamlit, exécutez :
 
 ```bash
-streamlit run app.py
+python -m streamlit run app.py
 ```
 
 L'application s'ouvrira automatiquement dans votre navigateur par défaut à l'adresse [http://localhost:8501](http://localhost:8501).
